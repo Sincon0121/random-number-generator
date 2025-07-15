@@ -14,6 +14,7 @@ st.set_page_config(page_title="난수 생성기", page_icon="🎲")
 st.title("🎲 메르센 트위스터 기반 난수 생성기")
 st.write("정수 범위를 설정하고, 최대 10개의 난수를 생성해보세요!")
 
+# ✅ input() 대신 Streamlit UI 사용
 min_val = st.number_input("난수 최소값", value=1, step=1)
 max_val = st.number_input("난수 최대값", value=100, step=1)
 count = st.slider("몇 개의 난수를 생성할까요?", 1, 10, 5)
